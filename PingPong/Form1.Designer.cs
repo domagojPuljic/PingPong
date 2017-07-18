@@ -46,8 +46,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Maroon;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(800, 10);
+            this.pictureBox1.Size = new System.Drawing.Size(800, 12);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -55,9 +56,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Maroon;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 490);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 488);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(800, 10);
+            this.pictureBox2.Size = new System.Drawing.Size(800, 12);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
@@ -66,9 +68,10 @@
             this.lblStart.AutoSize = true;
             this.lblStart.BackColor = System.Drawing.Color.Transparent;
             this.lblStart.Font = new System.Drawing.Font("Snap ITC", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStart.Location = new System.Drawing.Point(85, 140);
+            this.lblStart.Location = new System.Drawing.Point(113, 172);
+            this.lblStart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStart.Name = "lblStart";
-            this.lblStart.Size = new System.Drawing.Size(219, 63);
+            this.lblStart.Size = new System.Drawing.Size(273, 77);
             this.lblStart.TabIndex = 2;
             this.lblStart.Text = "START";
             this.lblStart.Click += new System.EventHandler(this.lblStart_Click);
@@ -80,9 +83,10 @@
             this.lblExit.AutoSize = true;
             this.lblExit.BackColor = System.Drawing.Color.Transparent;
             this.lblExit.Font = new System.Drawing.Font("Snap ITC", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExit.Location = new System.Drawing.Point(109, 214);
+            this.lblExit.Location = new System.Drawing.Point(145, 263);
+            this.lblExit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblExit.Name = "lblExit";
-            this.lblExit.Size = new System.Drawing.Size(169, 63);
+            this.lblExit.Size = new System.Drawing.Size(211, 77);
             this.lblExit.TabIndex = 3;
             this.lblExit.Text = "EXIT";
             this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
@@ -98,10 +102,11 @@
             // 
             this.lblEnd.AutoSize = true;
             this.lblEnd.BackColor = System.Drawing.Color.Transparent;
-            this.lblEnd.Font = new System.Drawing.Font("Snap ITC", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnd.Location = new System.Drawing.Point(284, 175);
+            this.lblEnd.Font = new System.Drawing.Font("Snap ITC", 28F);
+            this.lblEnd.Location = new System.Drawing.Point(250, 160);
+            this.lblEnd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEnd.Name = "lblEnd";
-            this.lblEnd.Size = new System.Drawing.Size(0, 63);
+            this.lblEnd.Size = new System.Drawing.Size(0, 61);
             this.lblEnd.TabIndex = 4;
             // 
             // lblPl1
@@ -109,9 +114,10 @@
             this.lblPl1.AutoSize = true;
             this.lblPl1.BackColor = System.Drawing.Color.Transparent;
             this.lblPl1.Font = new System.Drawing.Font("Snap ITC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPl1.Location = new System.Drawing.Point(354, 29);
+            this.lblPl1.Location = new System.Drawing.Point(273, 36);
+            this.lblPl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPl1.Name = "lblPl1";
-            this.lblPl1.Size = new System.Drawing.Size(30, 27);
+            this.lblPl1.Size = new System.Drawing.Size(38, 35);
             this.lblPl1.TabIndex = 5;
             this.lblPl1.Text = "0";
             // 
@@ -120,15 +126,16 @@
             this.lblPl2.AutoSize = true;
             this.lblPl2.BackColor = System.Drawing.Color.Transparent;
             this.lblPl2.Font = new System.Drawing.Font("Snap ITC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPl2.Location = new System.Drawing.Point(417, 29);
+            this.lblPl2.Location = new System.Drawing.Point(493, 36);
+            this.lblPl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPl2.Name = "lblPl2";
-            this.lblPl2.Size = new System.Drawing.Size(30, 27);
+            this.lblPl2.Size = new System.Drawing.Size(38, 35);
             this.lblPl2.TabIndex = 6;
             this.lblPl2.Text = "0";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PingPong.Properties.Resources.table;
             this.ClientSize = new System.Drawing.Size(800, 500);
@@ -140,6 +147,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -131,6 +131,13 @@ namespace PingPong
         {
             this.DoubleBuffered = true;//for faster performance
             this.Refresh();
+
+
+            if (KeyPressed(Keys.Escape))
+            {
+                Application.Exit();
+            }
+
             //MoveSprite(1, sensing.Mouse.X+7,sensing.Mouse.Y-40);
             if (KeyPressed(Keys.Up) && SpriteY(1) > 10)
                 MoveSprite(1, SpriteX(1), SpriteY(1) - 6);
